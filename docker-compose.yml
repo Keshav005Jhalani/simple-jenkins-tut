@@ -2,9 +2,7 @@ version: '3.8'
 
 services:
   app:
-    build:
-      context: sulkanain/simple-node-jenkins:latest
-      dockerfile: Dockerfile
+    image: sulkanain/simple-node-jenkins:latest
     ports:
       - "3000:3000"
     restart: "no"
